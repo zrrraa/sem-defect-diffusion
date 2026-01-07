@@ -39,8 +39,6 @@ You will need **two virtual environments**:
 
 Rationale: LaMa and Diffusers stacks may have incompatible Python/dependency requirements.
 
----
-
 ## 2 Data Preparation
 
 ### 2.1 Mask dilation and LaMa inpainting
@@ -84,8 +82,6 @@ data/
   synth/
 ```
 
----
-
 ## 3 Synthetic Dataset Generation
 
 Generate controllable synthetic samples into `data/synth`:
@@ -93,8 +89,6 @@ Generate controllable synthetic samples into `data/synth`:
 ```bash
 PYTHONPATH=. python scripts/02_make_synth_dataset.py
 ```
-
----
 
 ## 4 Training
 
@@ -150,8 +144,6 @@ PYTHONPATH=. CUDA_VISIBLE_DEVICES=0 python scripts/04_train_lora.py \
   --seed 0
 ```
 
----
-
 ## 5 Inference
 
 Single-image inference:
@@ -175,8 +167,6 @@ Class mapping:
 * `class_id=1` → particle
 * `class_id=2` → scratch
 
----
-
 ## 6 Interactive Demo (Gradio)
 
 Launch the interactive demo:
@@ -191,8 +181,6 @@ PYTHONPATH=. python scripts/06_demo_gradio.py \
 ```
 
 The demo uses Gradio **ImageEditor** so you can paint a mask directly on the input image, specify class/visibility, and generate a defect sample.
-
----
 
 ## Notes
 
