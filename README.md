@@ -2,6 +2,8 @@
 
 A controllable defect synthesis pipeline for SEM images using **Stable Diffusion Inpainting** + **ControlNet** (6-channel control map) and optional **UNet LoRA** domain adaptation.
 
+![video](https://github.com/zrrraa/sem-defect-diffusion/blob/master/video.gif)
+
 This repository provides scripts to:
 - build paired **(defect, clean, mask)** data using **LaMa** inpainting,
 - generate a controllable synthetic dataset with **area/visibility/class** control,
@@ -61,7 +63,7 @@ python3 bin/predict.py \
 
 Place defect images, masks, and LaMa-inpainted clean images under `data/`, then run `test/annotations_make.sh` to generate `annotations.jsonl`.
 
-Recommended directory structure:
+Recommended directory structure: (I did not add the "pattern_deform" category)
 
 ```text
 data/
