@@ -3,6 +3,7 @@
 A controllable defect synthesis pipeline for SEM images using **Stable Diffusion Inpainting** + **ControlNet** (6-channel control map) and optional **UNet LoRA** domain adaptation.
 
 ![video](https://github.com/zrrraa/sem-defect-diffusion/blob/master/video.gif)
+![overview](./overview.png)
 
 This repository provides scripts to:
 - build paired **(defect, clean, mask)** data using **LaMa** inpainting,
